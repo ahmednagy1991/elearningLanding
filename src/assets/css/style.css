@@ -1054,7 +1054,7 @@ a.move-top span {
 
 @media(max-width:1366px) {
     .main-content {
-        min-height: 45em;
+        min-height: 29em;
     }
 
     .banner-w3layouts-info h3 {
