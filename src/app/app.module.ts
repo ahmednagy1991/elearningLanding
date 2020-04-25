@@ -11,7 +11,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LangToggleComponent } from './components/lang-toggle/lang-toggle.component';
 import { LocationComponent } from './components/location/location.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
-import { AgmCoreModule } from '@agm/core'; 
+import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+// import { AgmCoreModule } from '@agm/core'; 
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -23,7 +25,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     LangToggleComponent,
     LocationComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +40,9 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBkcD1poGSDHoHf8HwQRbCCYI5KQAhBQno'
-    })
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyBkcD1poGSDHoHf8HwQRbCCYI5KQAhBQno'
+    // })
   ],
   providers: [],
   bootstrap: [AppComponent]
